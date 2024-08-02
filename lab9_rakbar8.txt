@@ -1,0 +1,44 @@
+
+PLAY [config-centos7-vm] *******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [update-apache] ***********************************************************
+ok: [vmlab]
+
+TASK [restart-apache] **********************************************************
+changed: [vmlab]
+
+TASK [install-epel-missing] ****************************************************
+ok: [vmlab]
+
+TASK [remove-package-'tree'] ***************************************************
+ok: [vmlab]
+
+TASK [set-hostname] ************************************************************
+ok: [vmlab]
+
+TASK [create-new-user-with-sudo-perms] *****************************************
+ok: [vmlab]
+
+TASK [create-rakbar8-sshdirectory] *********************************************
+changed: [vmlab]
+
+TASK [setup-keys-passwordless] *************************************************
+ok: [vmlab]
+
+TASK [setup-labs-directory] ****************************************************
+ok: [vmlab] => (item=1)
+ok: [vmlab] => (item=2)
+ok: [vmlab] => (item=3)
+ok: [vmlab] => (item=4)
+ok: [vmlab] => (item=5)
+ok: [vmlab] => (item=6)
+ok: [vmlab] => (item=7)
+ok: [vmlab] => (item=8)
+ok: [vmlab] => (item=9)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=10   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
